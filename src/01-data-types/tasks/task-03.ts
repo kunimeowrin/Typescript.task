@@ -9,3 +9,33 @@
  * 
  * display the student data using console.log.
  */
+
+type Student = {
+    studentId: string,
+    fullName: string,
+    age: number,
+    isActive: boolean,
+}
+
+const student1: Student = {
+    studentId: "1333",
+    fullName: "Oka Ruto",
+    age: 16,
+    isActive: true
+}
+
+const student2: Student = {
+    studentId: "1111",
+    fullName: "Mizuki Sinji",
+    age: 17,
+    isActive: true
+}
+
+const student3: Student = {
+    studentId: "1222",
+    fullName: "Emiko Rein",
+    age: 16,
+    isActive: false
+}
+
+console.log({student1,student2,student3})
