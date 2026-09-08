@@ -10,44 +10,46 @@
  * display the attendance data using console.log.
  */
 
-type employeeAttendance = {
-    ID: String,
-    name: String
-    date: String,
-    checkInTime: String,
-    checkOutTime: String,
-    totalWorkingHours: number,
-    wasPresent: boolean,
-}
+type Attendance = {
+    employeeId: string;
+    employeeName: string;
+    date: string;
+    checkIn: string;
+    checkOut: string;
+    workingHours: number;
+    present: boolean;
+};
 
-const employee1: employeeAttendance = {
-    ID: "87D9FD",
-    name: "Saire Rain",
-    date: "3 April 2026",
-    checkInTime: "6:00 am",
-    checkOutTime: "6:00 pm",
-    totalWorkingHours: 12,
-    wasPresent: true,
-}
+let attendance1: Attendance = {
+    employeeId: "EMP001",
+    employeeName: "Khasva Semi",
+    date: "2026-09-08",
+    checkIn: "08:00",
+    checkOut: "17:00",
+    workingHours: 8,
+    present: true
+};
 
-const employee2: employeeAttendance = {
-    ID: "49D9SD",
-    name: Serena Rain",
-    date: "3 April 2026",
-    checkInTime: "6:00 am",
-    checkOutTime: "6:00 pm",
-    totalWorkingHours: 12,
-    wasPresent: true,
-}
+let attendance2: Attendance = {
+    employeeId: "EMP002",
+    employeeName: "JMyesha Orlan",
+    date: "2026-09-08",
+    checkIn: "08:30",
+    checkOut: "17:30",
+    workingHours: 8,
+    present: true
+};
 
-const employee3: employeeAttendance = {
-    ID: "59D9SD",
-    name: "Reyden Rain",
-    date: "3 April 2026",
-    checkInTime: "6:00 am",
-    checkOutTime: "6:00 pm",
-    totalWorkingHours: 12,
-    wasPresent: true,
-}
+let attendance3: Attendance = {
+    employeeId: "EMP003",
+    employeeName: "Naufal Tresnta",
+    date: "2026-09-08",
+    checkIn: "-",
+    checkOut: "-",
+    workingHours: 0,
+    present: false
+};
 
-console.log({employee1, employee2, employee3})
+console.log(attendance1);
+console.log(attendance2);
+console.log(attendance3);

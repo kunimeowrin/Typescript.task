@@ -18,16 +18,16 @@
  */
 
 type Product = {
-    productCode: string,
-    productName: string,
-    price: number,
-    quantity: number,
-    freeShipping: boolean,
-}
+    productCode: string;
+    productName: string;
+    price: number;
+    quantity: number;
+    freeShipping: boolean;
+};
 
-const products: Product[] = [
+let products: Product[] = [
     {
-        productCode: 'FF45T1",
+        productCode: "KB001",
         productName: "Mechanical Keyboard",
         price: 850000,
         quantity: 1,
@@ -54,6 +54,6 @@ const products: Product[] = [
         quantity: 1,
         freeShipping: true
     }
-]
+];
 
-console.log(products)
+console.log(products);

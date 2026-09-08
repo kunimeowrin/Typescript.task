@@ -12,39 +12,41 @@
  */
 
 type Book = {
-    ISBNnumber: number,
-    Title: String,
-    authorName: String,
-    pages: number,
-    bookCategory: String,
-    availableToBorrow: boolean,
-}
+    isbn: string;
+    title: string;
+    author: string;
+    pages: number;
+    category: string;
+    available: boolean;
+};
 
-const book1: Book = {
-    ISBNnumber: 9780306406157,
-    Title: "See me then.",
-    authorName: "Serena Rein",
-    pages: 189,
-    bookCategory: "Horror",
-    availableToBorrow: false,
-}
+let book1: Book = {
+    isbn: "978-001",
+    title: "Death Smell",
+    author: "M.S.R Marsya",
+    pages: 465,
+    category: "Fantasy",
+    available: true
+};
 
-const book2: Book = {
-    ISBNnumber: 0987654321,
-    Title: "Little Perfect Skull",
-    authorName: "Megami Shariko",
-    pages: 257,
-    bookCategory: "Romance",
-    availableToBorrow: true,
-}
+let book2: Book = {
+    isbn: "978-002",
+    title: "Insecurity",
+    author: "Aleysha Roman",
+    pages: 90,
+    category: "Mental-Health",
+    available: true
+};
 
-const book3: Book = {
-    ISBNnumber: 1234567890,
-    Title: "The Storm After The Rain",
-    authorName: "Osana Najimi",
-    pages: 207,
-    bookCategory: "Thriller",
-    availableToBorrow: false,
-}
+let book3: Book = {
+    isbn: "978-003",
+    title: "A star beyond lit",
+    author: "Reyza Karina",
+    pages: 670,
+    category: "Horror",
+    available: false
+};
 
-console.log(book1, book2, book3)
+console.log(book1);
+console.log(book2);
+console.log(book3);

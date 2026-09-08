@@ -12,40 +12,54 @@
  * display the registration data using console.log.
  */
 
-type StudentCourse = {
-    studentId: string,
-    fullName: string,
-    grade: number,
-    courseID: string,
-    courseTitle: string,
-    instructorName: string,
-}
+type Registration = {
+    studentId: string;
+    studentName: string;
+    gradeLevel: number;
+    courseId: string;
+    courseTitle: string;
+    instructor: string;
+    learningHours: number;
+    registrationDate: string;
+    paymentCompleted: boolean;
+};
 
-const course1: StudentCourse = {
-    studentId: "1234567890",
-    fullName: "Hugo Vittorio",
-    grade: 89,
-    courseID: "GB025",
-    courseTitle: "How to use VSCO",
-    instructorName: "Serena Rena",
-}
+let registration1: Registration = {
+    studentId: "ST001",
+    studentName: "Haruto Sato",
+    gradeLevel: 11,
+    courseId: "C001",
+    courseTitle: "Web Programming",
+    instructor: "Yuki Tanaka",
+    learningHours: 40,
+    registrationDate: "2026-03-02",
+    paymentCompleted: true
+};
 
-const course2: StudentCourse = {
-    studentId: "0987654321",
-    fullName: "Reyden Rain",
-    grade: 98,
-    courseID: "BD098",
-    courseTitle: "Web Development",
-    instructorName: "Saire Rain",
-}
+let registration2: Registration = {
+    studentId: "ST002",
+    studentName: "Sakura Suzuki",
+    gradeLevel: 10,
+    courseId: "C002",
+    courseTitle: "Python Programming",
+    instructor: "Kenji Yamamoto",
+    learningHours: 35,
+    registrationDate: "2026-02-03",
+    paymentCompleted: true
+};
 
-const course3: StudentCourse = {
-    studentId: "13468097531",
-    fullName: "Jessica Mourn",
-    grade: 75,
-    courseID: "HG087",
-    courseTitle: "Database Management",
-    instructorName: "Ririna Rain",
-}
+let registration3: Registration = {
+    studentId: "ST003",
+    studentName: "Ren Nakamura",
+    gradeLevel: 12,
+    courseId: "C003",
+    courseTitle: "Java Programming",
+    instructor: "Aiko Watanabe",
+    learningHours: 45,
+    registrationDate: "2026-03-05",
+    paymentCompleted: false
+};
 
-console.log(course1, course2, course3)
+console.log(registration1);
+console.log(registration2);
+console.log(registration3);

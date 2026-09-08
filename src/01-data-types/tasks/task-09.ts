@@ -15,32 +15,32 @@
  * 3. Display the participant data using console.log.
  */
 
-type participantInfo = {
-    studentID: string,
-    name: string,
-    age: number,
-    hasPaid: boolean,
-}
+type Participant = {
+    studentId: string;
+    name: string;
+    age: number;
+    hasPaid: boolean;
+};
 
-const participantData: participantInfo[] = [
+let participants: Participant[] = [
     {
-        studentID: "ST001",
+        studentId: "ST001",
         name: "Ahmad Fauzi",
         age: 16,
-        hasPaid: true,
+        hasPaid: true
     },
     {
-        studentID: "ST002",
+        studentId: "ST002",
         name: "Siti Nurhaliza",
         age: 17,
-        hasPaid: false,
+        hasPaid: false
     },
     {
-        studentID: "ST003",
+        studentId: "ST003",
         name: "Budi Santoso",
         age: 16,
-        hasPaid: true,
-    },
-]
+        hasPaid: true
+    }
+];
 
-console.log(participantData)
+console.log(participants);

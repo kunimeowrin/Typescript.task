@@ -11,31 +11,33 @@
  */
 
 type Student = {
-    studentId: string,
-    fullName: string,
-    age: number,
-    isActive: boolean,
-}
+    studentId: string;
+    name: string;
+    age: number;
+    active: boolean;
+};
 
-const student1: Student = {
-    studentId: "1333",
-    fullName: "Oka Ruto",
-    age: 16,
-    isActive: true
-}
+let student1: Student = {
+    studentId: "01002",
+    name: "Osana Najimi",
+    age: 13,
+    active: true
+};
 
-const student2: Student = {
-    studentId: "1111",
-    fullName: "Mizuki Sinji",
-    age: 17,
-    isActive: true
-}
+let student2: Student = {
+    studentId: "01003",
+    name: "Pusheen Netta",
+    age: 13,
+    active: true
+};
 
-const student3: Student = {
-    studentId: "1222",
-    fullName: "Emiko Rein",
-    age: 16,
-    isActive: false
-}
+let student3: Student = {
+    studentId: "01004",
+    name: "Sairen Iern",
+    age: 14,
+    active: false
+};
 
-console.log({student1,student2,student3})
+console.log(student1);
+console.log(student2);
+console.log(student3);

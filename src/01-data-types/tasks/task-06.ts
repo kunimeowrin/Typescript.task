@@ -10,48 +10,46 @@
  * display the product data using console.log.
  */
 
-type productInfo = {
-    productCode: String,
-    productName: String,
-    sellingPrice: number,
-    stockQuantity: number,
-    productWeight: number,
-    rating: number,
-    discounted: boolean,
-}
+type Product = {
+    productCode: string;
+    productName: string;
+    price: number;
+    stock: number;
+    weight: number;
+    rating: number;
+    discounted: boolean;
+};
 
-const product1: productInfo = {
-    productCode: "5216345",
-    productName: "Skincare",
-    sellingPrice: 75000,
-    stockQuantity: 23,
-    productWeight: 123,
-    rating: 5,
-    discounted: true,
-}
+let product1: Product = {
+    productCode: "P001",
+    productName: "Mechanical Keyboard",
+    price: 850000,
+    stock: 18,
+    weight: 1.2,
+    rating: 4.5,
+    discounted: true
+};
 
-const product2: productInfo = {
-    productCode: "329035485",
-    productName: "Makeup",
-    sellingPrice: 150200,
-    stockQuantity: 96,
-    productWeight: 123,
-    rating: 5,
-    discounted: false,
-}
+let product2: Product = {
+    productCode: "P002",
+    productName: "Wireless Mouse",
+    price: 250000,
+    stock: 30,
+    weight: 0.5,
+    rating: 4.3,
+    discounted: false
+};
 
-const product3: productInfo = {
-    productCode: "985476325",
-    productName: "Hairbrush",
-    sellingPrice: 15000,
-    stockQuantity: 85,
-    productWeight: 24,
-    rating: 5,
-    discounted: false,
-}
+let product3: Product = {
+    productCode: "P003",
+    productName: "USB Headset",
+    price: 350000,
+    stock: 15,
+    weight: 0.7,
+    rating: 4.7,
+    discounted: true
+};
 
-console.log({
-    product1,
-    product2,
-    product3,
-})
+console.log(product1);
+console.log(product2);
+console.log(product3);

@@ -15,13 +15,20 @@
  * 5. Display the product data using console.log.
  */
 
-const productPrice: number = 850000
-const productCode: String = "KBR-001"
-const discount: number = 0.25
-const discountedPrice: number = productPrice - (productPrice * discount)
-const amountToBuy: number = 2
-const freeShipping: boolean = true
-const totalPrice: number = discountedPrice * amountToBuy
-const stock: number = 18
+let productName: string = "Mechanical Keyboard RGB";
+let productCode: string = "KBR-001";
+let price: number = 850000;
+let discount: number = 25;
+let quantity: number = 2;
+let premium: boolean = true;
+let freeShipping: boolean = true;
+let stock: number = 18;
 
-console.log({ productPrice, productCode, discount, discountedPrice, freeShipping, amountToBuy, totalPrice, stock })
+console.log(productName);
+console.log(productCode);
+console.log(price);
+console.log(discount);
+console.log(quantity);
+console.log(premium);
+console.log(freeShipping);
+console.log(stock);
