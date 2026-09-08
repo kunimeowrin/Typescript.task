@@ -50,6 +50,6 @@ let product3: Product = {
     discounted: true
 };
 
-console.log(product1);
-console.log(product2);
-console.log(product3);
+console.log(product1)
+console.log(product2)
+console.log(product3)
