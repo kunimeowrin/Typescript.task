@@ -14,3 +14,8 @@
  * Task: Store and display the result in a variable named "isEligible"
 
  */
+
+
+let isEligible = 82 >= 75 && 94 >= 90 && true;
+
+console.log(isEligible);

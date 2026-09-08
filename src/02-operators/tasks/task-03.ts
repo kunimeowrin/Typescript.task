@@ -17,3 +17,11 @@
  * - Bonus
  * - Final salary
  */
+
+let overtimePay = 12 * 50000;
+let bonus = 12 > 10 ? 300000 : 0;
+let finalSalary = 5000000 + overtimePay + bonus;
+
+console.log(overtimePay);
+console.log(bonus);
+console.log(finalSalary);

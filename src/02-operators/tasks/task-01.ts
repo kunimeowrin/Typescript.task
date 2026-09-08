@@ -14,3 +14,14 @@
  *  - Final payment
  * 2. Display the calculation results.
  */
+
+
+let food = 3 * 18000;
+let drink = 2 * 5000;
+let total = food + drink;
+let payment = total - 10000;
+
+console.log("Food:", food);
+console.log("Drink:", drink);
+console.log("Total:", total);
+console.log("Payment:", payment);
