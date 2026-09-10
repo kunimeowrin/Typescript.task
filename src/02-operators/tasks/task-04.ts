@@ -22,3 +22,25 @@
  *  - Calculate the final payment.
 
  */
+
+let subtotal = 850000 + (275000 * 2) + 120000;
+
+let totalItems = 0;
+totalItems++; // Keyboard
+totalItems++; // Mouse
+totalItems++; // Mouse
+totalItems++; // Mouse Pad
+
+let discount = 0;
+
+if (subtotal > 1000000) {
+  discount = subtotal * 0.10;
+}
+
+let finalPayment = subtotal - discount;
+
+console.log("Subtotal:", subtotal);
+console.log("Total Items:", totalItems);
+console.log("Discount:", discount);
+console.log("Free Shipping:", true);
+console.log("Final Payment:", finalPayment);

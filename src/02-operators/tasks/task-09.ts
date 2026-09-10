@@ -34,3 +34,26 @@
  * - Free shipping eligibility
 
  */
+
+let subtotal = 850000 + (275000 * 2) + 420000;
+
+let membershipDiscount = subtotal * 0.10;
+
+let paymentBeforeTax = subtotal - membershipDiscount - 100000;
+
+let vat = paymentBeforeTax * 0.11;
+
+let finalPayment = paymentBeforeTax + vat;
+
+let rewardPoints = Math.floor(paymentBeforeTax / 50000);
+
+let freeShipping = true || paymentBeforeTax > 1500000;
+
+console.log("Product Subtotal:", subtotal);
+console.log("Membership Discount:", membershipDiscount);
+console.log("Voucher:", 100000);
+console.log("Payment Before Tax:", paymentBeforeTax);
+console.log("VAT:", vat);
+console.log("Final Payment:", finalPayment);
+console.log("Reward Points:", rewardPoints);
+console.log("Free Shipping:", freeShipping);

@@ -24,3 +24,15 @@
  * - Final bill
  * - Green Energy Program eligibility
  */
+
+let usage = 25892 - 25640;
+let bill = usage * 1650;
+
+let finalBill = bill * 0.80;
+
+let greenEnergy = true && usage < 300 && false;
+
+console.log("Energy Consumption:", usage);
+console.log("Electricity Bill:", bill);
+console.log("Final Bill:", finalBill);
+console.log("Green Energy Program:", greenEnergy);
