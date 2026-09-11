@@ -33,3 +33,17 @@
  * - Calculate the remaining scholarship budget.
  * - Display whether the student is accepted.
  */
+
+let accepted = 3.89 >= 3.75 &&
+               4200000 < 5000000 &&
+               4 >= 3 &&
+               true &&
+               true;
+
+let scholarship = accepted ? 12000000 : 0;
+
+let remaining = 500000000 - scholarship;
+
+console.log("Accepted:", accepted);
+console.log("Scholarship:", scholarship);
+console.log("Remaining:", remaining);
