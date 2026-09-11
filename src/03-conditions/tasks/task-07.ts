@@ -30,3 +30,19 @@
  * 2. Implement both screening stages.
  * 3. Display the loan decision.
  */
+
+let name = "Andi Wijaya";
+let income = 10000000;
+let creditScore = 725;
+let debt = 2500000;
+let permanent = true;
+
+if (income >= 8000000 && creditScore >= 700) {
+    if (debt <= income * 0.30 && permanent) {
+        console.log("Loan Approved");
+    } else {
+        console.log("Manual Review");
+    }
+} else {
+    console.log("Loan Rejected");
+}
