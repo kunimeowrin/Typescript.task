@@ -54,3 +54,99 @@ const submissions = [
         score: 96
     }
 ];
+
+function countSubmitted(submissions: { student: string; submitted: boolean; score: number }[]): number {
+    let count = 0;
+
+    for (let i = 0; i < submissions.length; i++) {
+        if (submissions[i].submitted) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+function countMissing(submissions: { student: string; submitted: boolean; score: number }[]): number {
+    let count = 0;
+
+    for (let i = 0; i < submissions.length; i++) {
+        if (!submissions[i].submitted) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+function countPassed(submissions: { student: string; submitted: boolean; score: number }[]): number {
+    let count = 0;
+
+    for (let i = 0; i < submissions.length; i++) {
+        if (submissions[i].submitted && submissions[i].score >= 75) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+function countRevision(submissions: { student: string; submitted: boolean; score: number }[]): number {
+    let count = 0;
+
+    for (let i = 0; i < submissions.length; i++) {
+        if (submissions[i].submitted && submissions[i].score < 75) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+function calculateAverage(submissions: { student: string; submitted: boolean; score: number }[]): number {
+    let total = 0;
+
+    for (let i = 0; i < submissions.length; i++) {
+        total += submissions[i].score;
+    }
+
+    return total / submissions.length;
+}
+
+function findHighestScore(submissions: { student: string; submitted: boolean; score: number }[]): number {
+    let highest = submissions[0].score;
+
+    for (let i = 0; i < submissions.length; i++) {
+        if (submissions[i].score > highest) {
+            highest = submissions[i].score;
+        }
+    }
+
+    return highest;
+}
+
+function findLowestScore(submissions: { student: string; submitted: boolean; score: number }[]): number {
+    let lowest = submissions[0].score;
+
+    for (let i = 0; i < submissions.length; i++) {
+        if (submissions[i].score < lowest) {
+            lowest = submissions[i].score;
+        }
+    }
+
+    return lowest;
+}
+
+function printReport(submissions: { student: string; submitted: boolean; score: number }[]): void {
+    console.log("=== Assignment Submission Report ===");
+    console.log("Total Students:", submissions.length);
+    console.log("Submitted Assignments:", countSubmitted(submissions));
+    console.log("Missing Assignments:", countMissing(submissions));
+    console.log("Passed Students:", countPassed(submissions));
+    console.log("Students Requiring Revision:", countRevision(submissions));
+    console.log("Average Score:", calculateAverage(submissions));
+    console.log("Highest Score:", findHighestScore(submissions));
+    console.log("Lowest Score:", findLowestScore(submissions));
+}
+
+printReport(submissions);
