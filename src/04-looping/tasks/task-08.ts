@@ -13,11 +13,31 @@
  * - Number of orders waiting for stock
  * - Display all order IDs that are ready to ship
  */
+
 const orders = [
-  { id: "ORD001", paid: true, stockAvailable: true },
-  { id: "ORD002", paid: false, stockAvailable: true },
-  { id: "ORD003", paid: true, stockAvailable: false },
-  { id: "ORD004", paid: true, stockAvailable: true },
-  { id: "ORD005", paid: false, stockAvailable: false },
-  { id: "ORD006", paid: true, stockAvailable: true }
+    { id: "ORD001", paid: true, stockAvailable: true },
+    { id: "ORD002", paid: false, stockAvailable: true },
+    { id: "ORD003", paid: true, stockAvailable: false },
+    { id: "ORD004", paid: true, stockAvailable: true },
+    { id: "ORD005", paid: false, stockAvailable: false },
+    { id: "ORD006", paid: true, stockAvailable: true }
 ];
+
+let readyToShip = 0;
+let unpaid = 0;
+let waitingForStock = 0;
+
+for (let i = 0; i < orders.length; i++) {
+    if (orders[i].paid === true && orders[i].stockAvailable === true) {
+        readyToShip++;
+        console.log("Ready to Ship: " + orders[i].id);
+    } else if (orders[i].paid === false) {
+        unpaid++;
+    } else if (orders[i].stockAvailable === false) {
+        waitingForStock++;
+    }
+}
+
+console.log("Orders Ready to Ship: " + readyToShip);
+console.log("Unpaid Orders: " + unpaid);
+console.log("Orders Waiting for Stock: " + waitingForStock);
