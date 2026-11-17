@@ -19,29 +19,29 @@ const products: Product[] = [
   { id: 4, name: "Ruler", price: 2.0 },
 ];
 
-// TODO: Return total price of all products (use reduce)
+// Return total price of all products
 function getTotalPrice(items: Product[]): number {
-  return 0; // replace with your code
+  return items.reduce((total, product) => total + product.price, 0);
 }
 
-// TODO: Return product names as a string array (use map)
+// Return product names
 function getProductNames(items: Product[]): string[] {
-  return []; // replace with your code
+  return items.map(product => product.name);
 }
 
-// TODO: Return products with price less than maxPrice (use filter)
+// Return products with price less than maxPrice
 function getAffordable(items: Product[], maxPrice: number): Product[] {
-  return []; // replace with your code
+  return items.filter(product => product.price < maxPrice);
 }
 
-// TODO: Find product by id (use find), return undefined if not found
+// Find product by id
 function findProductById(items: Product[], id: number): Product | undefined {
-  return undefined; // replace with your code
+  return items.find(product => product.id === id);
 }
 
-// TODO: Return a new product object with an updated price (use spread, do NOT mutate original)
+// Update product price without changing original
 function updatePrice(product: Product, newPrice: number): Product {
-  return product; // replace with your code
+  return { ...product, price: newPrice };
 }
 
 // --- Tests (do not modify) ---
